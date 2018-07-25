@@ -1,0 +1,13 @@
+<view class="wrap">
+  <view class="inputId">
+    <image class="idLogo" src="../../image/icon/id-card.png"></image>
+    <view class="content">
+      <input type="idcard" placeholder="请输入您的身份证号" bindinput="changeCertification" value="{{Certification}}"/>
+      <image class="clearIcon" wx:if="{{Certification!=''}}" src="../../image/icon/clear.png" bindtap="clearCertification"></image>
+    </view>
+    <button type="warn" bindtap="submitCertification">确认</button>
+  </view>
+</view>
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>

@@ -1,0 +1,42 @@
+.wrap{
+  width: 100%;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+.inputId{
+  width: 700rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.idLogo{
+  width: 150rpx;
+  height: 150rpx;
+  display: block;
+  margin: 0rpx auto 50rpx auto;
+}
+.content{
+  width: 700rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+input{
+  width: 630rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #ccc;
+  padding-left: 10rpx;
+  padding-right: 60rpx;
+}
+.clearIcon{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: -50rpx;
+}
+button{
+  width: 50%;
+  margin-top: 50rpx;
+}

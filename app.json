@@ -1,0 +1,43 @@
+{
+  "pages": [
+    
+    "page/loading/index",
+    "page/index/index",
+    "page/sign/index",
+    "page/record/index",
+    
+    
+    
+    
+    "dist/tabbar"
+  ],
+  "window": {
+    "backgroundTextStyle": "white",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "党费缴纳",
+    "navigationBarBackgroundColor": "#d81e06",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#f4ea2a",
+    "borderStyle": "black",
+    "backgroundColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "iconPath": "image/icon/index.png",
+        "selectedIconPath": "image/icon/index-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "page/record/index",
+        "iconPath": "image/icon/record.png",
+        "selectedIconPath": "image/icon/record-active.png",
+        "text": "记录"
+      }
+    ]
+  },
+  "debug": true
+}

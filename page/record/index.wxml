@@ -1,0 +1,38 @@
+<view class="wrap">
+  <picker class="yearPicker" mode="date" fields="month" value="{{year}}" end="{{yearDefault}}" bindchange="bindDateChange">
+      <view class="picker">
+        请选择查询年月 -- <text class="border">{{year}}</text>
+      </view>
+  </picker>
+  <view class="search" bindtap="toSearch">查询</view>
+
+  <view class="record" >
+    <view class="record_tit" wx:if="{{record}}"> 
+      <text>缴费月份</text>
+      <text>缴费金额(¥)</text>
+      <text>缴费时间</text>
+      <text>下载</text>
+    </view>
+
+    <view  class="record_item" wx:for="{{record}}" wx:for-item="Record">
+      <text>{{Record.date1}}</text>
+      <text>{{Record.fprice}}</text>
+      <text>{{Record.subdate}}</text>
+      <text bindtap='downLoad' data-fimage='{{Record.fimage}}'>下载</text>
+    </view>
+  </view>
+
+  <view class="noData" wx:if="{{record.length<=0}}">
+    <image src="../../image/icon/noData.png"></image>
+    <text>暂无数据</text>
+  </view>
+
+</view>
+
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>
+
+
+
+ 

@@ -1,0 +1,74 @@
+.wrap{
+  /*position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%)*/
+}
+.Logo{
+  width: 100%;
+  margin: 40rpx auto 20rpx auto;
+}
+.Logo image{
+  width: 150rpx;
+  height: 150rpx;
+  display: block;
+  margin: 0 auto;
+}
+.sum{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sum text{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.costList{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.columnTit{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  border-bottom: 1rpx solid #ddd;
+}
+.columnTit text{
+  width: 250rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.Item{
+  width: 100%;
+  display: flex;
+   
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20rpx;
+}
+.Item text{
+  width: 250rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  /*width: 200rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;*/
+}
+.toPay{
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 34rpx;
+  margin: 0 auto;
+  font-weight: bold;
+}

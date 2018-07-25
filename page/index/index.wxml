@@ -1,0 +1,24 @@
+<view class="wrap">
+  <view class="Logo">
+    <image src="../../image/icon/party.png"></image>
+  </view>
+  <view class="sum">
+    <text>{{fname}}({{partybranch}})</text>
+    <text wx:if="{{costList.length<=0}}">截至上月，您已交清所有党费</text>
+    <view class="costList" wx:else>
+      <view class="columnTit">
+        <text>所属月份</text>
+        <text>金额</text>
+        <text>缴纳</text>
+      </view>
+      <view class="Item" wx:for="{{costList}}">
+        <text wx:if="{{!ifPayed}}">{{item.date}}</text>
+        <text wx:if="{{!ifPayed}}">{{item.fprice}}</text>
+      <button wx:if="{{!ifPayed}}" class="toPay" type="warn" data-time="{{item.date}}" data-forderno="{{item.forderno}}" data-idx="{{index}}" data-price="{{item.fprice}}" bindtap="toPay" >缴纳</button>
+      </view>
+    </view>
+  </view>
+</view>
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>
